@@ -3,15 +3,16 @@ type Message = {
     type: string;
     payload: object;
 };
+type Listener = (message: Message) => void;
 declare class MessageRoom {
     readonly messages: Message[];
-    readonly listeners: Set<Function>;
+    readonly listeners: Set<Listener>;
     constructor();
     send(message: Message): void;
     pop(): Message | undefined;
     get length(): number;
-    subscribe(listener: Function): void;
-    unsubscribe(listener: Function): void;
+    subscribe(listener: Listener): void;
+    unsubscribe(listener: Listener): void;
 }
 export default class MessageBus extends StatefulService {
     private rooms;

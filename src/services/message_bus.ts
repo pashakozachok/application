@@ -6,9 +6,11 @@ type Message = {
     payload: object
 }
 
+type Listener = (message: Message) => void;
+
 class MessageRoom {
     readonly messages: Message[];
-    readonly listeners: Set<Function>;
+    readonly listeners: Set<Listener>;
 
     constructor() {
         this.messages = [];
@@ -27,11 +29,11 @@ class MessageRoom {
         return this.messages.length;
     }
 
-    subscribe(listener: Function) {
+    subscribe(listener: Listener) {
         this.listeners.add(listener);
     }
 
-    unsubscribe(listener: Function) {
+    unsubscribe(listener: Listener) {
         this.listeners.delete(listener);
     }
 }

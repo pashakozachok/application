@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="baff4098-485c-40c2-95b4-dc03cb80eaed" name="dev">
+        <fileTransfer rootFolder="/home/levels-bot" accessType="SFTP" host="cryptobot" port="22" sshConfigId="1eaba7a2-9f83-4e52-83ee-9c7620368b2d" sshConfig="root@cryptobot:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

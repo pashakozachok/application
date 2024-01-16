@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "allowJs": false,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./out",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true
+  }
+}

@@ -1,14 +1,18 @@
 {
   "name": "application",
   "version": "1.0.0",
-  "main": "out/index.js",
+  "main": "lib/index.js",
   "author": "Pavlo Kozachok",
   "license": "ISC",
   "files": [
-    "out"
+    "lib"
   ],
   "devDependencies": {
     "typescript": "^5.3.3",
     "@types/node": "^20.11.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pashakozachok/trading-engine"
   }
 }

@@ -61,6 +61,8 @@ export default class MessageBus extends StatefulService {
     processMessages = () => {
         this.rooms.forEach(room => {
             for (let i = 0; i < room.length; i++) {
+                if (room.listeners.size === 0) continue;
+
                 const message = room.pop();
                 room.listeners.forEach(l => {
                     if (message) l(message);

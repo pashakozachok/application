@@ -4,9 +4,9 @@ import { State }        from "../types/state";
 export interface IStatefulService extends EventEmitter {
     state: State,
 
-    start(): Promise<void>
+    start(): Promise<any>
 
-    stop(): Promise<void>
+    stop(): Promise<any>
 }
 
 export enum Actions {

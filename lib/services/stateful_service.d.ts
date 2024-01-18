@@ -3,8 +3,8 @@ import { EventEmitter } from "events";
 import { State } from "../types/state";
 export interface IStatefulService extends EventEmitter {
     state: State;
-    start(): Promise<void>;
-    stop(): Promise<void>;
+    start(): Promise<any>;
+    stop(): Promise<any>;
 }
 export declare enum Actions {
     start = "start",
